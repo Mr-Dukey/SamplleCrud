@@ -1,0 +1,23 @@
+.userAdd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    background-color: blueviolet;
+}
+
+.userAddForm{
+    width: 20%;
+    height: 45%;
+    top: 20%;
+    /* left: 30%; */
+    position: relative;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.userAddForm h2{
+    text-align: center;
+    border-bottom: 2px gray solid;
+    padding: 10px;
+    position: relative;
+}
