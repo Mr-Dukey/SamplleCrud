@@ -7,8 +7,9 @@
 }
 
 .userAddForm{
+    position: relative;
     width: 20%;
-    height: 45%;
+    height: 55%;
     top: 20%;
     /* left: 30%; */
     position: relative;

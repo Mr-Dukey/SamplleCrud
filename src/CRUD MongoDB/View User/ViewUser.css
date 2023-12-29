@@ -12,7 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    flex-grow: 0;
+    /* flex-grow: 0; */
     height:auto;
     width: 60%;
     top: 40%;

@@ -3,6 +3,8 @@ import './ViewUser.css'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+
+
 export default function ViewUser() {
 
   const navi = useNavigate()
@@ -22,7 +24,7 @@ export default function ViewUser() {
   }
   return (
     <div className='ViewUser'>
-      <div className='Views container'>
+      <div className='Views container-md'>
         <a className='btn btn-success ms-3 p-2' href='create'>Add User +</a>
         <table className='table'>
           <thead>
@@ -30,6 +32,7 @@ export default function ViewUser() {
               <th scope='col'>Name</th>
               <th scope='col'>Age</th>
               <th scope='col'>Email</th>
+              <th scope='col'>File</th>
               <th scope='col'>Action</th>
             </tr>
           </thead>
@@ -41,6 +44,11 @@ export default function ViewUser() {
                     <td>{user.name}</td>
                     <td>{user.age}</td>
                     <td>{user.email}</td>
+                    <td>
+                      <a href={`${user.path}`} download={`${user.path}`}>
+                        {user.name}
+                      </a>
+                    </td>
                     <td>
                         <button className='btn btn-danger me-3' onClick={(e)=>handleDel(user._id)}>Delete</button>
                         <Link to={`/edit/${user._id}`} className='btn btn-primary'>Update</Link>
