@@ -13,7 +13,7 @@ export default function EditUser() {
   const navi = useNavigate();
 
   useEffect(()=>{
-    axios.get('http://localhost:5050/users/'+id)
+    axios.get('http://0.0.0.0:5050/users/'+id)
     .then(items=>{console.log(items.data)
       setName(items.data.name);
       setAge(items.data.age);

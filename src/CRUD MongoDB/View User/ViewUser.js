@@ -11,13 +11,13 @@ export default function ViewUser() {
   const [views,setViews] = useState([]);
 
   useEffect(()=>{
-    axios.get('http://localhost:5050/users')
+    axios.get('http://0.0.0.0:5050/users')
     .then(items=>setViews(items.data))
     .catch(err=>console.log(err))
   },[])
 
   function handleDel(id){
-    axios.delete('http://localhost:5050/delusers/'+id)
+    axios.delete('http://0.0.0.0:5050/delusers/'+id)
     .then(res=>console.log(res))
     .catch(err=>console.log(err))
     navi('/Views')

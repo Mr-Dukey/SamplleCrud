@@ -18,7 +18,7 @@ export default function CreateUser() {
   // }
   function Reg(e) {
     e.preventDefault();
-    axios.post('http://localhost:5050/createusers', {
+    axios.post('http://0.0.0.0:5050/createusers', {
       name: Name, age: Age, email: Email,fileName:img,path:img
     })
       .catch(err => console.log(err))

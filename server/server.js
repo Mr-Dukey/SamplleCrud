@@ -8,7 +8,7 @@ const multer = require('multer');
 
 
 const corsoption = {
-    origin:'http://localhost:3000'
+    origin:'http://0.0.0.0:3000'
 }
 app.use(cors(corsoption))
 // mongoose.connect('mongodb+srv://root:root@cluster0.cvvq99e.mongodb.net/?retryWrites=true&w=majority',function(error){
